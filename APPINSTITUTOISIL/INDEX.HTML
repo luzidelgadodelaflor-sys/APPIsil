@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movilidad ISI</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #F1F5F9;
+            color: #1E293B;
+        }
+
+        /* NAVBAR */
+        header {
+            background-color: #1D3557; /* Azul profundo */
+            padding: 12px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 17px;
+        }
+
+        nav ul li a:hover {
+            color: #4CC9F0;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #ADE8F4, #F1F5F9);
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #1D3557;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin-bottom: 30px;
+            color: #334155;
+        }
+
+        .hero button {
+            background-color: #3A86FF;
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .hero button:hover {
+            background-color: #2563eb;
+        }
+
+        /* SERVICIOS */
+        .servicios {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .servicios h2 {
+            font-size: 32px;
+            color: #1D3557;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+            border-top: 6px solid #4CC9F0;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            color: #1D3557;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #475569;
+            font-size: 16px;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding: 20px;
+            background-color: #1D3557;
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            header {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <img src="../APPINSTITUTOISIL/FOTOS/ISILCARRITO.jpg" alt="Logo Movilidad ISI">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Buscar Viaje</a></li>
+                <li><a href="#">Conductor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Transporte seguro entre campus ISIL</h1>
+        <p>
+            Movilidad ISI conecta a estudiantes con conductores aprobados 
+            (profesores y alumnos ISIL) para viajes rápidos, seguros y económicos
+            entre los campus de San Isidro, Miraflores y La Molina.
+        </p>
+
+        <button>Pedir un viaje</button>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios">
+        <h2>Viajes Disponibles</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>San Isidro → Miraflores</h3>
+                <p>Conexión rápida y económica entre los campus principales.</p>
+            </div>
+
+            <div class="card">
+                <h3>Miraflores → La Molina</h3>
+                <p>Ideal para estudiantes que cambian de sede.</p>
+            </div>
+
+            <div class="card">
+                <h3>La Molina → San Isidro</h3>
+                <p>Viajes seguros con conductores validados por ISIL.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Movilidad ISI – Transporte Oficial Estudiantil
+    </footer>
+
+</body>
+</html>
